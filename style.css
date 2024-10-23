@@ -1,0 +1,441 @@
+:root
+{
+    --blue :#000000;
+    --dark-blue : #333333;
+    --green : #ffffff;
+    --white : #ffffff;
+
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: Tahoma;
+}
+body
+{
+background-color: var(--dark-blue);
+color:var(--white);
+
+}
+
+header
+{
+text-align: center;
+justify-content: center;
+background-color: var(--blue);
+position: fixed;
+width: 100%;
+font-weight: bold;
+padding:2%;
+top: 0;
+}
+
+.title
+{
+    color: var(--green);
+    border-bottom: 1px solid var(--white);
+    font-size: 15pt;
+}
+
+.input-search
+{
+    width: 30%;
+    border: none;
+    border-radius:0 0 0 20px;
+    padding:2px;
+}
+
+.input-submit
+{
+    margin-left: -5px;
+    border: none;
+    border-radius:0 20px 0 0;
+    padding:2px;
+    background-color: var(--green);
+    color: var(--blue);
+    width: 5%;
+    font-weight: bold;
+}
+
+nav
+{
+    margin-top: 3px;
+
+}
+nav ul
+{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+nav ul li a
+{
+    color: var(--white);
+}
+
+nav ul li a:hover
+{
+    border-bottom: 3px solid var(--white) ;
+}
+
+.slider
+{
+    margin-top: 10%;
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 65%;
+}
+
+.slider h4
+{
+    margin-top: 20%;
+}
+
+.slides
+{
+    display: flex;
+    width: 50rem;
+    overflow: hidden;
+}
+
+
+.slide
+{
+    width: 50rem;
+    transition: .5s;
+    
+
+}
+
+.choose_1:checked ~ .slides > .s1
+{
+    margin-left: -0rem;
+}
+
+
+.choose_2:checked ~ .slides > .s1
+{
+    margin-left: -50rem;
+}
+
+.overlay 
+{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target 
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup 
+{
+    margin: 70px auto;
+    padding: 20px;
+    background: var(--dark-blue);
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+  
+.popup h2 {
+    margin-top: 0;
+    color: var(--white);
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover 
+{
+    color: #06D85F;
+}
+
+.content 
+{
+    max-height: 30%;
+    width: 50%;
+}
+
+.title-p
+{
+    margin-left: 60px;
+}
+
+.populer
+{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.populer img{
+    border-radius: 10px;
+}
+
+.tentang
+{
+    display: grid;
+    justify-content: center;
+    margin-top: 10%;
+    font-size: 15pt;
+}
+ 
+.card
+{
+    background-color: var(--blue);
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: 20px 20px rgb(139, 126, 126);
+}
+ 
+.card h1
+{
+    text-align: center;
+}
+ 
+html
+{
+    scroll-behavior: smooth;
+}
+ 
+ 
+footer
+{
+    display: grid;
+    justify-content: center;
+    background-color: var(--blue);
+    margin-top: 10%;
+    padding: 2%;
+}
+ 
+.sosmed img 
+{
+    width: 50px;
+    justify-content: center;
+    display: right;
+}
+ 
+#copyright
+{
+    text-align: center;
+    padding: 10px;
+}
+
+#slider {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  margin-top: 150px;
+  margin-bottom: 20px;
+}
+
+.mySlides {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.mySlides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#slider {
+    position: relative;
+    width: 80%; /* Ubah ukuran lebar slider */
+    height: 350px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    margin-left: auto; /* Tambahkan margin kiri untuk membuat slider berada di tengah */
+    margin-right: auto; /* Tambahkan margin kanan untuk membuat slider berada di tengah */
+  }
+  
+  .mySlides {
+    display: none;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .mySlides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; /* Tambahkan border-radius untuk membuat gambar menjadi lebih rapi */
+  }
+  
+  
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #b79f25;
+    color: #fff;
+  }
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
+  
+  .logo img {
+    width: 150%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000; /* tambahkan z-index untuk membuat navbar berada di atas elemen lainnya */
+    box-shadow: 0 2px 4px rgba(218, 71, 71, 0.1); /* tambahkan bayangan untuk membuat navbar lebih menonjol */
+  }
+  
+.link a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.sosmed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .sosmed img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .sosmed img:hover {
+    transform: scale(1.1);
+  }
+  
+  .sosmed a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .sosmed a:hover {
+    color: #06D85F;
+  }
+
+
+h2{
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 10vh;
+font-size: 2rem;
+}
+
+
+header {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease; 
+}
+
+.card:hover {
+  transform: translateY(-5px); 
+}
+
+/* Add shadow to buttons */
+.input-submit {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.input-submit:hover {
+  background-color: #e0e0e0; /* Lighten background on hover */
+}
+
+/* Add hover effect to product images */
+.populer img {
+  transition: transform 0.3s ease;
+}
+
+.populer img:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Add shadow to overlay */
+.overlay {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .populer {
+      grid-template-columns: repeat(2, 1fr); /* Adjust grid for smaller screens */
+  }
+}
+.populer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Space between items */
+  width: 90%;
+  margin: 5% auto; /* Centering the grid */
+}
+
+.link {
+  text-align: center; /* Center the content within each link */
+}
+
+.link img {
+  width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners */
+  transition: transform 0.3s ease; /* Smooth scaling on hover */
+}
+
+.link:hover img {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
